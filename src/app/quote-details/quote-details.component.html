@@ -1,1 +1,11 @@
-<p>quote-details works!</p>
+ <div>
+     <p> {{quotes.Author}} </p>
+<button class="btn btn-success" (click)="thumbsUpButtonClick()">Thumbs Up</button>
+  
+<button class="btn btn-danger" (click)="thumbsDownButtonClick()">Thumbs Down</button>
+
+<p>{{this.numberOfVotes}}</p>
+   
+<button (click)= 'quoteComplete(true)'>Delete Quote</button>
+    
+</div>
