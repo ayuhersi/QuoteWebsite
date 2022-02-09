@@ -1,1 +1,21 @@
-<p>quote-form works!</p>
+
+<div class="container-fluid">
+    <div class="row">
+        <form (ngSubmit)='submitAuthor()' #QuoteForm='ngForm'>
+            <div class="form-group">
+                <label for="name">Author:</label>
+                <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.Author" name="name" #name="ngModel" required>
+                 {{newQuote.Author}}
+            </div>
+            <div class="form-group">
+                <label for="author">Quote:</label>
+                <input type="text" required class="form-control" id="quote" [(ngModel)]="newQuote.quote" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="submitted">Submitted by:</label>
+                <input type="text" required class="form-control" id="submitted" [(ngModel)]="newQuote.submitted" name="name" required>
+            </div>
+            <button type="submit" class="btn btn-success btn-lg">Submit Quote:</button>
+        </form>
+    </div>
+</div>
