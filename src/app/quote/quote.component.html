@@ -1,1 +1,27 @@
-<p>quote works!</p>
+
+
+
+<hr>
+<h2>Create quotes on this website!</h2>
+
+<div class="container">
+
+    <div class="row">
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    </div>
+    
+</div>
+
+
+<div class="container">
+<div class="row" *ngFor="let quote of quotes;let i = 'index'">
+<ul>
+        <li >{{quote.quote}}</li> 
+        <button (click)='toggleDetails(i)'>Details</button>
+        
+
+        <app-quote-details *ngIf="quote.showDetails" [quotes]='quote' (isComplete) = 'completequote($event,i)'></app-quote-details>    
+</ul>
+</div>
+
+</div>
