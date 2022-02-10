@@ -3,7 +3,7 @@
 ## Description
 {This is application is able to let users create new quotes, upvote/downvote quotes, delete quotes, and see the amount of upvotes/downvotes the quotes have.}
 ## Setup/Installation Requirements
-* Clone the repo {git clone https://github.com/ayuhersi/AngularProject1.git}
+* Clone the repo {git clone https://github.com/ayuhersi/QuoteWebsite.git}
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.1.
 ## Live link
 https://ayuhersi.github.io/QuoteWebsite/
